@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Modern Apartment", "price": 120000, "location": "Kathmandu", "image": "/img/p1.jpg" },
+  { "id": 2, "title": "Luxury Villa", "price": 450000, "location": "Pokhara", "image": "/img/p2.jpg" },
+  { "id": 3, "title": "Cozy Studio", "price": 80000, "location": "Lalitpur", "image": "/img/p3.jpg" }
+]
