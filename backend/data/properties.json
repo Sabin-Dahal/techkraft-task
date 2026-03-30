@@ -1,5 +1,11 @@
 [
-  { "id": 1, "title": "Modern Apartment", "price": 120000, "location": "Kathmandu", "image": "/img/p1.jpg" },
-  { "id": 2, "title": "Luxury Villa", "price": 450000, "location": "Pokhara", "image": "/img/p2.jpg" },
-  { "id": 3, "title": "Cozy Studio", "price": 80000, "location": "Lalitpur", "image": "/img/p3.jpg" }
+  { "id": 1, "title": "Modern Apartment", "price": 32000000, "location": "Kathmandu", "image": "/img/p1.jpg" },
+  { "id": 2, "title": "Luxury Villa", "price": 14500000, "location": "Pokhara", "image": "/img/p2.jpg" },
+  { "id": 3, "title": "Cozy Studio", "price": 2500000, "location": "Lalitpur", "image": "/img/p3.jpg" },
+  { "id": 4, "title": "Spacious House", "price": 30000000, "location": "Bhaktapur", "image": "/img/p4.jpg" },
+  { "id": 5, "title": "RiverFront Condo", "price": 17000000, "location": "Chitwan", "image": "/img/p5.jpg" },
+  { "id": 6, "title": "Mountain View Cabin", "price": 6500000, "location": "Mustang", "image": "/img/p6.jpg" },
+  { "id": 7, "title": "City Center Loft", "price": 9900000, "location": "Kathmandu", "image": "/img/p7.jpg" },
+  { "id": 8, "title": "Suburban Family Home", "price": 12000000, "location": "Biratnagar", "image": "/img/p8.jpg" },
+  { "id": 9, "title": "3 Flat House", "price": 13000000, "location": "Bandipur", "image": "/img/p9.jpg" }
 ]

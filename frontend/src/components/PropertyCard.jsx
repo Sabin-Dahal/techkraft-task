@@ -1,8 +1,10 @@
 import api from '../api/axios';
+import { useState } from 'react';
 import './PropertyCard.css';
 const API_BASE_URL = "http://localhost:5000";
 
 const PropertyCard = ({ property, isFav, setFavourites }) => {
+  const [error, setError] = useState("");
   const toggleFavorite = async () => {
     try {
       if (isFav) {
@@ -14,17 +16,25 @@ const PropertyCard = ({ property, isFav, setFavourites }) => {
       }
     } catch (err) {
       console.error(err);
-      alert("Could not update favorites");
+      setError(err.response?.data?.msg || "Failed to update favourites");
     }
   };
 
   return (
     <div className="card">
-      <img src={`${API_BASE_URL}${property.image}`} alt={property.title} />
+      <div className="image-container">
+        <img src={`${API_BASE_URL}${property.image}`} alt={property.title} />
+      </div>
+      
       <div className="card-content">
-        <h3>{property.title}</h3>
-        <p className="price">Nrs.{property.price.toLocaleString()}</p>
-        <p className="location">{property.location}</p>
+        <div className="title-row">
+          <div className="text-group">
+            <h3 title={property.title}>{property.title}</h3>
+            <p className="location" title={property.location}> {property.location}</p>
+          </div>
+          <p className="price">Rs.{property.price.toLocaleString('en-IN')}</p>
+        </div>
+        {error && <p className="error">{error}</p>}
         <button 
           onClick={toggleFavorite} 
           className={`fav-btn ${isFav ? 'active' : ''}`}

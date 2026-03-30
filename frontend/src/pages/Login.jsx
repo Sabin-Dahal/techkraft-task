@@ -18,9 +18,9 @@ const Login = () => {
         setLoading(true);
         try{
             await login(email, password);
-            navigate("/dashboard");
+            navigate("/dashboard", {replace: true});
         }catch(err){
-            setError(err.message);
+            setError(err.message || "Login ");
             setLoading(false);
         }
     };

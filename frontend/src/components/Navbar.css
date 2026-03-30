@@ -1,6 +1,6 @@
 .navbar {
   background-color: whitesmoke;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: row;
@@ -8,14 +8,25 @@
   align-items: center;
   gap: 1rem;
   width: 100%;
+  
+  /* NEW SCROLL BEHAVIOR STYLES */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays above all other content (like images/cards) */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
+/* This class is applied by React when scrolling down */
+.navbar-hidden {
+  transform: translateY(-100%);
+  box-shadow: none; /* Removes the shadow while hiding for a cleaner look */
 }
 
 .nav-brand {
-    padding-left: 7rem;
+  padding-left: 7rem;
   font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: -1px;
+  font-weight: 700;
+  letter-spacing: px;
 }
 
 .nav-brand a {
@@ -25,7 +36,7 @@
 }
 
 .nav-brand a:hover {
-  color: #4f46e5;
+  color: #001aff;
 }
 
 .nav-links {
@@ -81,7 +92,7 @@
 }
 
 .register-link {
-  background: #4f46e5;
+  background: #001aff;
   color: white !important;
   padding: 0.5rem 1.25rem;
   border-radius: 8px;

@@ -27,7 +27,7 @@ const Register = () => {
       // UX best practice: Redirect to login with a success message state
       navigate('/login', { state: { message: 'Registration successful! Please login.' } });
     } catch (err) {
-      setError(err.response?.data?.error || 'Registration failed. Try again.');
+      setError(err.message || 'Registration failed. Try again.');
     } finally {
       setLoading(false);
     }

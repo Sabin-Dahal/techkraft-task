@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./Hero.css";
+import hero1 from '../assets/hero1.jpg';
+import hero2 from '../assets/hero2.jpg';
+import hero3 from '../assets/hero3.jpg';
 
-const images = [
-  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
-  "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-];
+
+const images = [hero1, hero2, hero3];
 
 export default function Hero({user}) {
   const [current, setCurrent] = useState(0);

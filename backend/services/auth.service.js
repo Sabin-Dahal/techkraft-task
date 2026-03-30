@@ -4,10 +4,10 @@ import jwt from "jsonwebtoken";
 
 export const register = async ({ name, email, password, role }) => {
   if(!name || !email || !password) throw new Error("Please fill all required fields");
-  const hashed = await bcrypt.hash(password, 10);
   const existing = await prisma.user.findUnique({
     where:{email}});
   if (existing) throw new Error("User already exists");
+  const hashed = await bcrypt.hash(password, 10);
   if (!["BUYER", "SELLER"].includes(role)) {
       throw new Error("Invalid role. Must be BUYER or SELLER");
   }
