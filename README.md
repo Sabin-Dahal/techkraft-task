@@ -202,8 +202,6 @@ Buyer Dashboard
 ![Dashboard](./screenshots/dashboard.png)
 Favourites
 ![Favourites](./screenshots/favourites.png)
-Sample error
-![Error message](./screenshots/error.png)
  
 ---
 
