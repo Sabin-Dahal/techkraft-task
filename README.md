@@ -194,11 +194,15 @@ UNIQUE(userId, propertyId)
 ---
  
 ## Screenshots
- 
-![Login](./screenshots/login.png)
+ Register
 ![Register](./screenshots/register.png)
+Login
+![Login](./screenshots/login.png)
+Buyer Dashboard
 ![Dashboard](./screenshots/dashboard.png)
+Favourites
 ![Favourites](./screenshots/favourites.png)
+Sample error
 ![Error message](./screenshots/error.png)
  
 ---
